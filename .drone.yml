@@ -2,6 +2,5 @@ pipeline:
   backend:
     image: busybox:latest
     commands:
-      - env
       - for i in {1..100}; do echo $i; sleep 1; done
       - env
