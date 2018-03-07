@@ -2,5 +2,5 @@ pipeline:
   backend:
     image: alpine:latest
     commands:
-      - for ((n=0;n<100;n++)); do echo $n; done
+      - for i in `seq 1 10`; do echo $i; done 
       - env
