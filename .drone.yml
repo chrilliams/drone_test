@@ -1,18 +1,5 @@
 pipeline:
   backend:
-    image: golang
+    image: busybox:latest
     commands:
-      - go get
-      - go build
-      - go test
-
-  frontend:
-    image: node:6
-    commands:
-      - npm install
-      - npm test
-
-  notify:
-    image: plugins/slack
-    channel: developers
-    username: drone
+      - env
