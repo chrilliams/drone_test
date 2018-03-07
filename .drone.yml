@@ -3,4 +3,5 @@ pipeline:
     image: busybox:latest
     commands:
       - env
-      - opkg-install curl
+      - sleep 1000
+      - env
